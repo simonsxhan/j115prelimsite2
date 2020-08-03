@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simon Han</title>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        
+        header{
+            height: 100vh;
+            overflow: hidden;
+        }
+        .split {
+              height:100%;
+              width: 50%;
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              overflow-x: hidden;
+        }
+        
+        .left {
+          left: 0;
+          background-color: white;
+        }
+
+        .right {
+          right: 0;
+          background-color: #194c63;
+        }
+        
+        .centered {
+            font-family: Futura, sans-serif;
+            font-size: 8em;
+        }
+        
+        h1 {
+            text-align: right;
+            color: #194c63;
+        }
+        
+        .split.right h1 {
+            text-align: left;
+            padding-top: 100px;
+            color: white;
+        }
+        
+        .split.left h2 {
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: .3em;
+            color: #194c63;
+        }
+        
+        ul {
+            list-style: none;
+            list-style-position: inside;
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: .3em;
+        }
+        
+        header ul li::before{
+            content: "\2022";
+            color: white;
+        }
+        
+        a:link {
+            color: white;
+        }
+        
+        a:visited {
+            color: white;
+        }
+        
+        a:hover {
+            color: #ffff00;
+        }
+        
+        section {
+            height:100vh;
+            background-color: #add7eb;
+            color: #194c63;
+            text-align: justify;
+            overflow: hidden;
+        }
+        
+        section p{
+            font-style: italic;
+            font-family: Futura, sans-serif;
+            font-size: 2em;
+            font-weight: 100;
+            max-width: 460px;
+            display: block;
+            margin: 30vh auto 0;
+        }
+        
+        .article-1 {
+            height: 100vh;
+            background-color: #E8E8E8;
+        }
+        
+        .article-2 {
+            height: 100vh;
+            background-color: #fbf7e7;
+        }
+        
+        .article-1 h2{
+                font-size: 40px;
+                font-family: Futura, sans-serif;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 15px;
+                color: #505050;
+        }
+        
+        .article-2 h2{
+                font-size: 40px;
+                font-family: Futura, sans-serif;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 15px;
+                color: #6b0715;
+        }
+        
+        .article-1 p{
+            font-size: 18px;
+            font-family: Baskerville, serif;
+            max-width: 80%;
+            padding-left: 100px;
+            padding-top: 30px;
+            color: #505050;
+        }
+        
+        .article-2 p{
+            font-size: 18px;
+            font-family: Baskerville, serif;
+            max-width: 80%;
+            padding-left: 100px;
+            padding-top: 30px;
+            color: #6b0715;
+        }
+        
+        .article-1 img{
+            width: 40%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .article-2 img{
+            width: 35%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="split left">
+            <div class="centered">
+                <h1>Simon</h1>
+                <h2>nice to meet you!</h2>
+            </div>
+        </div>
+        
+        <div class="split right">
+            <div class="centered">
+                <h1>Han</h1>
+                <ul>
+                     <li><a href="#Home">Home</a></li> 
+                     <li><a href="#About">About</a></li> 
+                     <li><a href="#Portfolio">Portfolio</a></li> 
+                     <li><a href="#Contact">Contact</a></li> 
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section><a id="About"></a>
+        <p>i'm simon, a rising junior at berkeley majoring in molecular and cell biology and minoring in journalism. i also conduct stem cell research at UCSF and volunteer at the suitcase clinic. always down to chat about healthcare, media, and design! </p>    
+    </section>
+    
+    <article class="article-1">
+                <h2>Minimalism</h2>
+                <img src="https://media.journalism.berkeley.edu/upload/2020/08/15964063298afe2c2.jpg" alt="Yellow Toned Photo of Sea ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim blandit volutpat maecenas volutpat blandit. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Vivamus arcu felis bibendum ut. Elit sed vulputate mi sit amet mauris. Pulvinar proin gravida hendrerit lectus. Et sollicitudin ac orci phasellus egestas tellus. Nibh venenatis cras sed felis eget velit aliquet sagittis id. Porttitor eget dolor morbi non arcu risus quis. Suspendisse ultrices gravida dictum fusce ut. Facilisi morbi tempus iaculis urna id volutpat lacus. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Elit pellentesque habitant morbi tristique senectus.</p>                
+                <p>Eget duis at tellus at urna condimentum mattis pellentesque id.</p>
+                <p>Eu mi bibendum neque egestas congue quisque egestas diam in. Duis convallis convallis tellus id interdum velit. Ac felis donec et odio pellentesque diam volutpat commodo. Vivamus at augue eget arcu dictum varius. Morbi tempus iaculis urna id volutpat lacus. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. </p>            
+    </article>
+    
+    <article class="article-2">
+                <h2>Beach House</h2>
+                <img src="https://media.journalism.berkeley.edu/upload/2020/08/1596408871092b7bc.jpg" alt="Beach House in San Diego">
+                <p>In ornare quam viverra orci sagittis eu. Faucibus vitae aliquet nec ullamcorper sit. Vitae ultricies leo integer malesuada nunc vel risus commodo. Et leo duis ut diam quam nulla porttitor massa id. Ultrices dui sapien eget mi proin sed. Tortor vitae purus faucibus ornare.</p>                
+                <p>Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Neque aliquam vestibulum morbi blandit. Amet consectetur adipiscing elit ut aliquam purus sit. Fermentum odio eu feugiat pretium nibh ipsum consequat. Dictum fusce ut placerat orci nulla pellentesque. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Pellentesque habitant morbi tristique senectus et netus et. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Lectus nulla at volutpat diam. Metus aliquam eleifend mi in nulla. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Amet consectetur adipiscing elit duis tristique sollicitudin. Id faucibus nisl tincidunt eget nullam non nisi. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Accumsan tortor posuere ac ut.</p>
+    </article>
+    
+    
+    
+</body>
+</html>
